@@ -1,0 +1,101 @@
+/* theme-dark-version - video */
+.theme-dark .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels]) {
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+.theme-dark .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels])::after {
+  content: var(--jump-to) " YouTube Video";
+  font-size: 11pt !important;
+  line-height: 10px !important;
+  color: var(--brand-experiment-200);
+  background: hsla(0,calc(var(--saturation-factor, 1)*100%),50%,0.3);
+  transition: background-color 50ms ease-out, color 50ms ease-out;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.theme-dark .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:hover::after {
+  background-color: hsl(0,calc(var(--saturation-factor, 1)*100%),50%);
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
+}
+.theme-dark .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels])::before {
+  position: absolute;
+  content: "";
+  background: var(--brand-experiment-200);
+  height: 16px;
+  width: 16px;
+  margin-top: 4px;
+  margin-left: 2px;
+  -webkit-mask: var(--icon) center/contain no-repeat;
+  mask: var(--icon) center/contain no-repeat;
+}
+.theme-dark .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels]):hover::before {
+  background: #fff;
+}
+.theme-dark .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels])::before {
+  --icon: url("data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EYouTube%3C/title%3E%3Cpath d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'/%3E%3C/svg%3E");
+  height: 14px;
+  width: 14px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+/* theme-light-version - video */
+.theme-light .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels]) {
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+.theme-light .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels])::after {
+  content: var(--jump-to) " YouTube Video";
+  font-size: 11pt !important;
+  line-height: 10px !important;
+  color: hsl(0,calc(var(--saturation-factor, 1)*100%),50%);
+  background: hsla(0,calc(var(--saturation-factor, 1)*100%),50%,0.15);
+  transition: background-color 50ms ease-out, color 50ms ease-out;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.theme-light .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:hover::after {
+  background-color: hsl(0,calc(var(--saturation-factor, 1)*100%),50%);
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
+}
+.theme-light .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels])::before {
+  position: absolute;
+  content: "";
+  background: hsl(0,calc(var(--saturation-factor, 1)*100%),50%);
+  height: 16px;
+  width: 16px;
+  margin-top: 4px;
+  margin-left: 2px;
+  -webkit-mask: var(--icon) center/contain no-repeat;
+  mask: var(--icon) center/contain no-repeat;
+}
+.theme-light .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels]):hover::before {
+  background: #fff;
+}
+.theme-light .messageContent-2t3eCI a[href^="https://www.youtube.com/watch"]:not([href^=channels])::before {
+  --icon: url("data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EYouTube%3C/title%3E%3Cpath d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'/%3E%3C/svg%3E");
+  height: 14px;
+  width: 14px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
